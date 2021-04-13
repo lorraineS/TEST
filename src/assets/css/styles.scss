@@ -1,0 +1,23 @@
+//
+// Configuration
+//
+
+// Variables
+@import "_config/_variables";
+
+// Mixins
+@import "_config/_mixins";
+
+// Keyframes
+@import "_config/keyframes";
+
+// KNACSS imports
+// -----------------
+@import "knacss";
+
+@import "_global/_base";
+@import "_global/_utils";
+@import "_global/layouts";
+
+// Components - Tabs
+@import "_components/_tabs";

@@ -1,0 +1,41 @@
+$radius: .75rem;
+
+.tab-nav {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.tab-nav__item {
+  display: inline-block;
+  cursor: pointer;
+  border-radius: $radius;
+  padding: 0.5rem 1rem;
+  color: $black;
+
+  &:not(:first-child):not(:last-child) {
+    margin: 0 1.5rem;
+  }
+
+  &.is-active {
+    background-color: $black;
+    color: $white;
+  }
+
+  &--red {
+    background: $red-500;
+    color: $white;
+  }
+}
+
+.tab-panel {
+  box-shadow: 1px 4px 5px rgba(0, 0, 0, .1);
+  border: 1px solid rgba(0, 0, 0, .1);
+  border-radius: $radius;
+  min-height: 100px;
+  padding: 1rem;
+
+  &:not(.is-hidden) {
+    animation: fadeIn .5s ease-in-out forwards;
+  }
+}

@@ -1,0 +1,12 @@
+.site-wrapper {
+  margin: 0 auto;
+  padding: 0 24px;
+  max-width: calc(500px + 48px);
+}
+
+.site-wrapper.h-full {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
